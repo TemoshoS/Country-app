@@ -39,6 +39,12 @@ const Home = () => {
                 </div>
 
                 <div>
+                    <select className='select'>
+                        <option>All</option>
+                    </select>
+                </div>
+
+                <div>
 
                 </div>
 

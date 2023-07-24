@@ -29,6 +29,7 @@ body {
 
 .filter-container{
   margin-bottom: 40px;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -40,15 +41,15 @@ body {
 
 .search{
 
-  padding: 20px 30px ;
-  background-color: rgb(65, 65, 65);
+  padding: 5% 20% ;
+  background-color: rgb(54, 61, 71);
   border: none;
   border-radius: 5px;
   margin-left: 100px;
   color: white;
   font-size: 1rem;
   font-weight: 600;
-  width: 200px;
+ 
 }
 
 .search:focus{
@@ -61,10 +62,26 @@ body {
 
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 40%;
   transform: translateY(-50%);
   pointer-events: none;
 }
+.search::placeholder {
+  color: white;
+}
+
+.select{
+  background-color: rgb(54, 61, 71);
+  color: white;
+  border: none;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  
+  font-family: 'Leelawadee';
+  padding: 4% 10% ;
+}
+
 
 .country-container{
 
@@ -216,41 +233,94 @@ body {
 
 .search{
 
-  padding: 10px 25px ;
-  background-color: rgb(65, 65, 65);
-  border: none;
-  border-radius: 5px;
-  margin-left: 100px;
-  font-size: 1rem;
+  padding: 4% 10% ;
+  font-size: 0.8rem;
   font-weight: 600;
-  width: 200px;
-}
-}
-
-
-
-
-
-
-@media (max-width: 576px) {
-  .country-list p {
-    font-size: 12px; 
-  }
-  .world{
-    margin-left: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .dark-mode{
-    margin-right: 12px;
-    font-size: 1rem;
   
-  }
-
-  .country-list{
-    width: 90%;
-  }
 }
+.search-container > svg{
+  left: 40%;
+  font-size: 0.8rem;
+}
+.select {
+  margin-left: 80%;
+  width: 175%;
+  height: 35px;
+  padding: 4% 10% ;
+  font-size: 0.7rem;
+}
+
+.country-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.country-details {
+  flex: 1;
+  width: 100%;
+  margin-right: 0;
+  gap: 5%;
+}
+
+.country-details-right{
+
+  margin-right:15%;
+}
+
+.border-container {
+  flex: 1;
+  margin-top: 0;
+}
+
+.border-grid{
+
+  grid-template-columns:repeat(3,3fr);  
+  grid-gap: 10px;
+  
+}
+.countrydetails-image{
+
+  width: 100%;
+  height: 25vh;
+ 
+}
+
+.country-details p{
+  font-size:0.9em;
+}
+
+.country-list p{
+  font-size:0.9em;
+}
+
+
+.home-button{
+  
+  width: 80px;
+  height: 3.5vh;
+  font-size: 0.9rem;
+}
+
+
+.world{
+  margin-left: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.dark-mode{
+  margin-right: 12px;
+  font-size: 1rem;
+
+}
+
+}
+
+
+
+
+
+
 
 
 
