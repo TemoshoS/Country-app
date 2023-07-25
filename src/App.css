@@ -104,16 +104,13 @@ body {
 
 
 
-.country-list{
 
-  width: 70%;
-  height: auto;
-  background-color: rgb(41, 46, 54);
-  color: white;
-  border-radius: 5px;
-  
-
+.country-name{
+  display: flex;
+  justify-content: center;
 }
+
+
 .grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -124,8 +121,15 @@ body {
 }
 
 
-.country-list {
+.country-list{
+
+  width: 70%;
+  height: auto;
+  background-color: rgb(41, 46, 54);
+  color: white;
+  border-radius: 5px;
   
+
 }
 
 .country-list p {

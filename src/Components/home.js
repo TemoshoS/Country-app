@@ -58,10 +58,10 @@ const Home = () => {
 
 
                         <img src={countries.flags.png} alt='' className='country-image' />
-                        {countries.name.common}
-                        <p>Population: {countries.population}</p>
-                        <p>Region: {countries.region}</p>
-                        <p>Capital: {countries.capital}</p>
+                        <p className='country-name'><b>{countries.name.common}</b></p>
+                        <p><b>Population: </b>{countries.population}</p>
+                        <p><b>Region: </b>{countries.region}</p>
+                        <p><b>Capital: </b>{countries.capital}</p>
 
 
                     </div>
